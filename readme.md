@@ -1,5 +1,7 @@
 # Brand Color CSS Generator
 
+[Use it from here](https://sohan5005.github.io/BrandCSS/) or fork the repo and open index.html in your browser.
+
 A simple tool that helps you generate brand specific color CSS codes without any hassle. Can be use to colorized your solcial icons or social links or sharing buttons on your website or project. No need to use any preprocessor, just select which brands you need, add your CSS rules and click generate. Simple as 1, 2, 3!
 
 #### How to make CSS rules:
