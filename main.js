@@ -172,7 +172,7 @@
 			}
 
 			for( var y in x ) {
-				output += b.join(',\n').replace(/%%/g, y) + ' {\n';
+				output += b.join(',\n').replace(/%%/g, y.replace( /([a-z])([A-Z])/g, '$1-$2' ).toLowerCase()) + ' {\n';
 				output += $.map(c, formatProps).join(';\n').replace(/##/g, x[y]) + ';';
 				output += '\n}\n';
 			}
