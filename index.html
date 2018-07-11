@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brand Color CSS code generator</title>
+	<meta property="author" content="Sohan Zaman" />
+	<meta property="description" content="A Simple CSS Generator to generate all your brand colors like social media, messaging platforms or any other brands. A tool for web designers & developers" />
+	<meta property="og:title" content="Brand Color CSS code generator" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://sohan5005.github.io/BrandCSS/sample-result.jpg" />
+	<meta property="og:url" content="https://sohan5005.github.io/BrandCSS" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular|Roboto+Mono:regular" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Brand Color CSS Generator</h1>
+		<div class="left">
+			<div class="preset-colors">
+			</div>
+			<h4>Add/Modify Colors</h4>
+			<div class="color-adder">
+				<div class="a-color">
+					<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" class="media-name" placeholder="my-media" />
+					<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" class="media-color" placeholder="#00ff00" />
+					<button class="remove-color">remove</button>
+				</div>
+			</div>
+			<button id="add_new_color">Add New Color</button>
+		</div>
+		<div class="right">
+			<h4>Add CSS Rules</h4>
+			<div id="rules">
+				<div class="rule-repeater">
+					<div class="a-rule">
+						<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="selectors" placeholder=".my-selector .fa-%%,&#10;.my-button-%% span"></textarea>
+						<textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="properties" placeholder="background: ##;&#10;color: #fff;&#10;border-color: ##;"></textarea>
+						<button class="remove-rule">remove</button>
+					</div>
+				</div>
+				<button id="add_new_rule">Add New Rule</button>
+			</div>
+			<h4>Result</h4>
+			<textarea id="result" readonly="readonly" onclick="this.focus();this.select()"></textarea>
+			<button id="go">Generate</button>
+		</div>
+	</div>
+	<footer><p>Created with &#128150; by <a href="https://www.facebook.com/sohan.zaman" target="_blank">Sohan Zaman</a></p></footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
